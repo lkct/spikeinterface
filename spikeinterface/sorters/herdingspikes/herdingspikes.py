@@ -206,6 +206,8 @@ class HerdingspikesSorter(BaseSorter):
 
         H.DetectFromRaw(load=True, tInc=int(p['t_inc']))
 
+        return
+
         sorted_file = str(output_folder / 'HS2_sorted.hdf5')
         if (not H.spikes.empty):
             C = hs.HSClustering(H)

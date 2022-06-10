@@ -152,7 +152,7 @@ class BandpassFilterRecording(FilterRecording):
     """
     name = 'bandpass_filter'
 
-    def __init__(self, recording, freq_min=300., freq_max=6000., margin_ms=5.0, dtype=None, **filter_kwargs):
+    def __init__(self, recording, freq_min=300., freq_max=6000., margin_ms=100.0, dtype=None, **filter_kwargs):
         FilterRecording.__init__(self, recording, band=[freq_min, freq_max], margin_ms=margin_ms, dtype=dtype,
                                  **filter_kwargs)
         self._kwargs = dict(recording=recording.to_dict(), freq_min=freq_min, freq_max=freq_max, margin_ms=margin_ms)
