@@ -81,3 +81,6 @@ pynndescent
 
 ## NWB extractor
 pynwb>=2.1.0
+
+## hs-detction for sortingcomponents
+hs-detection

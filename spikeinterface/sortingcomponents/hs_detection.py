@@ -1,6 +1,6 @@
 import warnings
 from pathlib import Path
-from typing import Union
+from typing import Dict, List, Union
 
 from ..preprocessing import bandpass_filter
 
@@ -28,7 +28,7 @@ _deprecation = {
 }
 
 
-def run_hs_detection(recording, *, output_folder: Union[str, Path] = '', **kwargs) -> list[dict]:
+def run_hs_detection(recording, *, output_folder: Union[str, Path] = '', **kwargs) -> List[Dict]:
     # full signature:
     # recording: BaseRecording, *,
     # output_folder: Union[str, Path] = '',
